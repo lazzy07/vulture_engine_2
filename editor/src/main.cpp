@@ -1,6 +1,5 @@
 #include <iostream>
-
-int Run();
+#include <Vulture/core/Vulture.hpp>
 
 int main(){
   Run();

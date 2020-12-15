@@ -2,6 +2,7 @@
 /build
 /.vs
 /.vscode
+/bin
 
 ####################  CMake .gitignore  ####################
 CMakeLists.txt.user

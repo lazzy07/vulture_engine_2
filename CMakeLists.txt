@@ -3,7 +3,9 @@ set(CMAKE_GENERATOR_PLATFORM x64)
 
 project(VultureEngine)
 
-add_subdirectory(editor)
 add_subdirectory(engine)
+add_subdirectory(editor)
+
+add_definitions(/bigobj)
 
 set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT vul2_editor)

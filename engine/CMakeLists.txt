@@ -8,10 +8,15 @@ project(vul2_engine)
 add_library(${PROJECT_NAME} 
 src/Vulture.cpp 
 src/Vulture.hpp
+src/profiling/logging/Logger.hpp
+src/profiling/logging/Logger.cpp
 )
 
-#chaiscript headers
+#chaiscript headers (Header only library)
 target_include_directories(${PROJECT_NAME} PRIVATE vendor/chaiscript/include)
+
+#spdlog headers (Header only library)
+target_include_directories(${PROJECT_NAME} PRIVATE vendor/spdlog/include)
 
 add_definitions(/bigobj)
 

@@ -6,4 +6,6 @@ project(VultureEngine)
 add_subdirectory(engine)
 add_subdirectory(editor)
 
+add_definitions(/bigobj)
+
 set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT vul2_editor)
